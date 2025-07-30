@@ -8,7 +8,9 @@ namespace SFServer.Shared.Client.Connection
     public partial class CheckConnectionResponse : ISFResponse
     {
         public DateTime ServerTime { get; set; }
-        
+
         public bool DebugMode { get; set; }
+
+        public Guid ProjectId { get; set; }
     }
 }

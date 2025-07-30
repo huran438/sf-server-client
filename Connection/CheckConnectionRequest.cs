@@ -7,8 +7,10 @@ namespace SFServer.Shared.Client.Connection
     public partial class CheckConnectionRequest : SFRequest
     {
         public string Credential { get; set; }
-        
+
         public string DeviceId { get; set; }
+
+        public string BundleId { get; set; }
         public override string Endpoint => "Connection/check";
     }
 }
