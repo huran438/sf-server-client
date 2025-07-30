@@ -8,6 +8,8 @@ namespace SFServer.Shared.Client.Auth
     {
         public string GoogleClientId { get; set; }
         public string AuthCode { get; set; }
-        public override string Endpoint => "Auth/GooglePlayLogin";
+        public override string Endpoint => "auth/googleplaylogin";
+        
+        public override bool IsProject => true;
     }
 }

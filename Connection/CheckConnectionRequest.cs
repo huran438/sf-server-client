@@ -11,6 +11,7 @@ namespace SFServer.Shared.Client.Connection
         public string DeviceId { get; set; }
 
         public string BundleId { get; set; }
-        public override string Endpoint => "Connection/check";
+        public override string Endpoint => "connection/check";
+        public override bool IsProject => false;
     }
 }

@@ -10,6 +10,8 @@ namespace SFServer.Shared.Client.Purchases
         public string ProductId { get; set; }
         public string PurchaseToken { get; set; }
 
-        public override string Endpoint => "Purchases/validate-android";
+        public override string Endpoint => "purchases/validate-android";
+        
+        public override bool IsProject => true;
     }
 }

@@ -8,6 +8,8 @@ namespace SFServer.Shared.Client.Analytics
     public partial class AnalyticsEventRequest : SFRequest
     {
         public List<AnalyticsEventDto> Events { get; set; } = new();
-        public override string Endpoint => "Analytics/batch";
+        public override string Endpoint => "analytics/batch";
+        
+        public override bool IsProject => true;
     }
 }

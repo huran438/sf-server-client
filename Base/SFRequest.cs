@@ -6,5 +6,8 @@ namespace SFServer.Shared.Client.Base
     {
         [MemoryPackIgnore]
         public abstract string Endpoint { get; }
+
+        [MemoryPackIgnore]
+        public abstract bool IsProject { get; }
     }
 }

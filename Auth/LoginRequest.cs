@@ -5,6 +5,8 @@ namespace SFServer.Shared.Client.Auth
     [MemoryPackable]
     public partial class LoginRequest : LoginRequestBase
     {
-        public override string Endpoint => "Auth/login";
+        public override string Endpoint => "auth/login";
+        
+        public override bool IsProject => true;
     }
 }

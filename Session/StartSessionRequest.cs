@@ -9,6 +9,8 @@ namespace SFServer.Shared.Client.Session
     {
         public Guid SessionId { get; set; }
 
-        public override string Endpoint => "Session/start";
+        public override string Endpoint => "session/start";
+        
+        public override bool IsProject => true;
     }
 }
