@@ -2,8 +2,6 @@
 
 # SF Server Shared
 
-[Documentation website](https://docs.secretplace.studio/#sf-server-client)
-
 Shared C# request and response contracts for SF Server integrations. This Unity Package Manager library contains data transfer objects for login, connection checks, sessions, analytics, device metadata, and Android purchase validation.
 
 The package provides types and endpoint metadata. Your application supplies HTTP transport, authentication headers, URL construction, compression, and retries.
